@@ -1,0 +1,75 @@
+2 [main] INFO org.hibernate.cfg.annotations.Version - Hibernate Annotations 3.4.0.GA
+10 [main] INFO org.hibernate.cfg.Environment - Hibernate 3.3.0.SP1
+13 [main] INFO org.hibernate.cfg.Environment - hibernate.properties not found
+15 [main] INFO org.hibernate.cfg.Environment - Bytecode provider name : javassist
+29 [main] INFO org.hibernate.cfg.Environment - using JDK 1.4 java.sql.Timestamp handling
+78 [main] INFO org.hibernate.annotations.common.Version - Hibernate Commons Annotations 3.1.0.GA
+80 [main] INFO org.hibernate.ejb.Version - Hibernate EntityManager 3.4.0.GA
+530 [main] INFO org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: org.ansoft.scalajpademo.model.Book
+537 [main] INFO org.hibernate.cfg.annotations.QueryBinder - Binding Named query: findBooksByAuthor => from Book b where b.author.id = :id order by b.title
+537 [main] INFO org.hibernate.cfg.annotations.QueryBinder - Binding Named query: findBooksByDate => from Book b where b.published between :startDate and :endDate
+537 [main] INFO org.hibernate.cfg.annotations.QueryBinder - Binding Named query: findBooksByTitle => from Book b where lower(b.title) like :title order by b.title
+537 [main] INFO org.hibernate.cfg.annotations.QueryBinder - Binding Named query: findAllBooks => from Book b order by b.title
+583 [main] INFO org.hibernate.cfg.annotations.EntityBinder - Bind entity org.ansoft.scalajpademo.model.Book on table Book
+643 [main] INFO org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: org.ansoft.scalajpademo.model.Author
+643 [main] INFO org.hibernate.cfg.annotations.QueryBinder - Binding Named query: findAllAuthors => from Author a order by a.name
+643 [main] INFO org.hibernate.cfg.annotations.EntityBinder - Bind entity org.ansoft.scalajpademo.model.Author on table Author
+712 [main] INFO org.hibernate.cfg.annotations.CollectionBinder - Mapping collection: org.ansoft.scalajpademo.model.Author.books -> Book
+714 [main] INFO org.hibernate.cfg.AnnotationConfiguration - Hibernate Validator not found: ignoring
+738 [main] INFO org.hibernate.cfg.search.HibernateSearchEventListenerRegister - Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+813 [main] INFO org.hibernate.connection.DriverManagerConnectionProvider - Using Hibernate built-in connection pool (not for production use!)
+813 [main] INFO org.hibernate.connection.DriverManagerConnectionProvider - Hibernate connection pool size: 20
+813 [main] INFO org.hibernate.connection.DriverManagerConnectionProvider - autocommit mode: true
+1606 [main] INFO org.hibernate.connection.DriverManagerConnectionProvider - using driver: org.apache.derby.jdbc.EmbeddedDriver at URL: jdbc:derby:lift_example;create=true
+1606 [main] INFO org.hibernate.connection.DriverManagerConnectionProvider - connection properties: {autocommit=true, release_mode=auto}
+3096 [main] INFO org.hibernate.cfg.SettingsFactory - RDBMS: Apache Derby, version: 10.4.2.0 - (689064)
+3096 [main] INFO org.hibernate.cfg.SettingsFactory - JDBC driver: Apache Derby Embedded JDBC Driver, version: 10.4.2.0 - (689064)
+3106 [main] INFO org.hibernate.dialect.Dialect - Using dialect: org.hibernate.dialect.DerbyDialect
+3109 [main] INFO org.hibernate.transaction.TransactionFactoryFactory - Transaction strategy: org.hibernate.transaction.JDBCTransactionFactory
+3110 [main] INFO org.hibernate.transaction.TransactionManagerLookupFactory - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+3110 [main] INFO org.hibernate.cfg.SettingsFactory - Automatic flush during beforeCompletion(): disabled
+3110 [main] INFO org.hibernate.cfg.SettingsFactory - Automatic session close at end of transaction: disabled
+3111 [main] INFO org.hibernate.cfg.SettingsFactory - Scrollable result sets: enabled
+3111 [main] INFO org.hibernate.cfg.SettingsFactory - JDBC3 getGeneratedKeys(): disabled
+3111 [main] INFO org.hibernate.cfg.SettingsFactory - Connection release mode: auto
+3112 [main] INFO org.hibernate.cfg.SettingsFactory - Maximum outer join fetch depth: 3
+3112 [main] INFO org.hibernate.cfg.SettingsFactory - Default batch fetch size: 1
+3112 [main] INFO org.hibernate.cfg.SettingsFactory - Generate SQL with comments: disabled
+3112 [main] INFO org.hibernate.cfg.SettingsFactory - Order SQL updates by primary key: disabled
+3112 [main] INFO org.hibernate.cfg.SettingsFactory - Order SQL inserts for batching: disabled
+3112 [main] INFO org.hibernate.cfg.SettingsFactory - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+3113 [main] INFO org.hibernate.hql.ast.ASTQueryTranslatorFactory - Using ASTQueryTranslatorFactory
+3113 [main] INFO org.hibernate.cfg.SettingsFactory - Query language substitutions: {}
+3113 [main] INFO org.hibernate.cfg.SettingsFactory - JPA-QL strict compliance: enabled
+3113 [main] INFO org.hibernate.cfg.SettingsFactory - Second-level cache: enabled
+3113 [main] INFO org.hibernate.cfg.SettingsFactory - Query cache: disabled
+3113 [main] INFO org.hibernate.cfg.SettingsFactory - Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+3113 [main] INFO org.hibernate.cfg.SettingsFactory - Optimize cache for minimal puts: disabled
+3113 [main] INFO org.hibernate.cfg.SettingsFactory - Structured second-level cache entries: disabled
+3116 [main] INFO org.hibernate.cfg.SettingsFactory - Echoing all SQL to stdout
+3116 [main] INFO org.hibernate.cfg.SettingsFactory - Statistics: disabled
+3116 [main] INFO org.hibernate.cfg.SettingsFactory - Deleted entity synthetic identifier rollback: disabled
+3117 [main] INFO org.hibernate.cfg.SettingsFactory - Default entity-mode: pojo
+3117 [main] INFO org.hibernate.cfg.SettingsFactory - Named query checking : enabled
+3226 [main] INFO org.hibernate.impl.SessionFactoryImpl - building session factory
+3353 [main] INFO org.hibernate.impl.SessionFactoryObjectFactory - Not binding factory to JNDI, no JNDI name configured
+3355 [main] INFO org.hibernate.tool.hbm2ddl.SchemaUpdate - Running hbm2ddl schema update
+3355 [main] INFO org.hibernate.tool.hbm2ddl.SchemaUpdate - fetching database metadata
+3380 [main] INFO org.hibernate.tool.hbm2ddl.SchemaUpdate - updating schema
+3775 [main] INFO org.hibernate.tool.hbm2ddl.DatabaseMetadata - table not found: Author
+3782 [main] INFO org.hibernate.tool.hbm2ddl.DatabaseMetadata - table not found: Book
+3783 [main] INFO org.hibernate.tool.hbm2ddl.DatabaseMetadata - table not found: Author
+3784 [main] INFO org.hibernate.tool.hbm2ddl.DatabaseMetadata - table not found: Book
+3785 [main] INFO org.hibernate.tool.hbm2ddl.DatabaseMetadata - table not found: hibernate_unique_key
+4010 [main] INFO org.hibernate.tool.hbm2ddl.SchemaUpdate - schema update complete
+4373 [main] WARN org.hibernate.util.JDBCExceptionReporter - SQL Warning: 10000, SQLState: 01J01
+4373 [main] WARN org.hibernate.util.JDBCExceptionReporter - Database 'lift_example' not created, connection made to existing database instead.
+Hibernate: insert into Author (name, id) values (?, ?)
+Hibernate: insert into Book (author_id, genre, published, title, id) values (?, ?, ?, ?, ?)
+Hibernate: select book0_.id as id0_, book0_.author_id as author5_0_, book0_.genre as genre0_, book0_.published as published0_, book0_.title as title0_ from Book book0_ order by book0_.title
+Hibernate: select author0_.id as id1_0_, author0_.name as name1_0_ from Author author0_ where author0_.id=?
+Found Huh?
+Hibernate: delete from Book where id=?
+Hibernate: delete from Author where id=?
+4516 [main] INFO org.hibernate.impl.SessionFactoryImpl - closing
+4516 [main] INFO org.hibernate.connection.DriverManagerConnectionProvider - cleaning up connection pool: jdbc:derby:lift_example;create=true
